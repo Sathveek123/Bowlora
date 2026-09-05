@@ -31,8 +31,8 @@ const pillars = [
 
 export const WhyBowlora: React.FC = () => {
   return (
-    <section id="why-us" className="py-24 bg-[#1B1F16] text-[#F5F1E8] border-t border-[#2E3324]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="why-us" className="py-24 dark-section text-[#F5F1E8] border-t border-[#3D4530]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -51,7 +51,7 @@ export const WhyBowlora: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-[#1F2418] border border-[#2E3324] rounded-[20px] p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:border-[#B08D57]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4 group"
+                className="bg-[#2D3423] border border-[#3D4530] rounded-[20px] p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:border-[#B08D57]/40 hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4 group"
               >
                 {/* 56px Circular Icon Badge */}
                 <div className="w-14 h-14 rounded-full bg-[#4A5D2A]/20 border border-[#7A9450]/30 text-[#7A9450] flex items-center justify-center group-hover:bg-[#4A5D2A] group-hover:text-[#F5F1E8] transition-colors shrink-0">

@@ -58,8 +58,8 @@ export const MealsShowcase: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<{ name: string; desc: string } | null>(null);
 
   return (
-    <section id="menu" className="py-24 sm:py-32 bg-[#141810] text-[#F5F1E8] border-t border-[#2E3324]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="menu" className="py-24 sm:py-32 dark-section text-[#F5F1E8] border-t border-[#3D4530]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">

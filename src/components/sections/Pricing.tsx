@@ -15,12 +15,12 @@ export const Pricing: React.FC<PricingProps> = ({
   const activeGoal = GOALS_DATA.find((g) => g.slug === selectedGoalSlug);
 
   return (
-    <section id="plans" className="py-24 sm:py-32 bg-[#141810] text-[#F5F1E8] border-t border-[#2E3324]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="plans" className="py-24 sm:py-32 dark-section text-[#F5F1E8] border-t border-[#3D4530]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Contextual Goal Banner (if arrived from Goal selection) */}
         {activeGoal ? (
-          <div className="mb-12 p-6 rounded-2xl border border-[#B08D57] bg-[#1F2418] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
+          <div className="mb-12 p-6 rounded-2xl border border-[#B08D57] bg-[#2D3423] flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-[#4A5D2A] text-[#F5F1E8] flex items-center justify-center shrink-0">
                 <HeartPulse className="w-5 h-5 text-[#C9A876]" />
@@ -46,7 +46,7 @@ export const Pricing: React.FC<PricingProps> = ({
           </div>
         ) : (
           /* Cold Entry Goal Prompt */
-          <div className="mb-12 bg-[#1F2418] border border-[#2E3324] rounded-2xl p-4 sm:p-5 text-center flex items-center justify-center gap-2">
+          <div className="mb-12 bg-[#2D3423] border border-[#3D4530] rounded-2xl p-4 sm:p-5 text-center flex items-center justify-center gap-2">
             <span className="font-body text-xs sm:text-sm text-[#D8D2C0]">Not sure which plan fits you best?</span>
             <a href="#goals" className="font-accent text-xs text-[#C9A876] hover:text-[#F5F1E8] font-bold underline uppercase tracking-wider">
               Find your goal first →
@@ -81,10 +81,10 @@ export const Pricing: React.FC<PricingProps> = ({
             return (
               <div
                 key={plan.id}
-                className={`relative bg-[#1F2418] rounded-[24px] p-8 flex flex-col justify-between transition-all duration-300 ${
+                className={`relative bg-[#2D3423] rounded-[24px] p-8 flex flex-col justify-between transition-all duration-300 ${
                   isFeatured
                     ? 'border-2 border-[#B08D57] shadow-[0_16px_50px_rgba(176,141,87,0.2)] md:-translate-y-2'
-                    : 'border border-[#2E3324] shadow-md hover:border-[#B08D57]/50'
+                    : 'border border-[#3D4530] shadow-md hover:border-[#B08D57]/50'
                 }`}
               >
                 {/* 1. Featured Gold Badge */}

@@ -33,8 +33,8 @@ export const PROMO_CARDS = [
 
 export const PromoHub: React.FC = () => {
   return (
-    <section className="py-16 bg-[#141810] text-[#F5F1E8] border-t border-[#2E3324]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 dark-section text-[#F5F1E8] border-t border-[#3D4530]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>

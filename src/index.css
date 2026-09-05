@@ -3,10 +3,10 @@
 
 @layer base {
   :root {
-    /* === CORE BACKGROUND TONES === */
-    --color-bg-deep: #141810;        /* Primary dark background - blackened olive */
-    --color-bg-deep-alt: #1B1F16;    /* Slightly lifted dark surface, for alternating sections */
-    --color-bg-card-dark: #1F2418;   /* Card backgrounds sitting on deep bg */
+    /* === CORE BACKGROUND TONES — REAL WARM OLIVE === */
+    --color-bg-deep: #242A1C;        /* Base dark olive - visible yellow-green warmth */
+    --color-bg-deep-alt: #2A3020;    /* Slightly lifted dark surface, for alternating sections */
+    --color-bg-card-dark: #2D3423;   /* Card backgrounds sitting on dark olive bg */
     --color-bg-cream: #F5F1E8;       /* Light section background - warm off-white */
     --color-bg-cream-alt: #EFEADD;   /* Slightly deeper cream for alternating light sections */
 
@@ -36,7 +36,7 @@
     --color-brown-light: #8A6248;
 
     /* === FUNCTIONAL === */
-    --color-border-dark: #2E3324;
+    --color-border-dark: #3D4530;     /* Borders/dividers on dark olive sections */
     --color-border-light: #DDD6C4;
     --color-success: #7A9450;
     --color-error: #B0563E;
@@ -74,6 +74,44 @@
 .font-display { font-family: var(--font-display); }
 .font-body    { font-family: var(--font-body); }
 .font-accent  { font-family: var(--font-accent); }
+
+/* Texture & Anti-Template Grain Overlay */
+.dark-section {
+  position: relative;
+  background: linear-gradient(135deg, #242A1C 0%, #2A3020 60%, #262C1E 100%);
+}
+
+.dark-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+/* Organic Asymmetric Food Blob Mask for Hero Collage */
+.bowlora-organic-blob {
+  border-radius: 62% 38% 70% 30% / 48% 62% 38% 52%;
+  transition: border-radius 0.6s ease-in-out;
+}
+.bowlora-organic-blob:hover {
+  border-radius: 48% 52% 40% 60% / 60% 40% 60% 40%;
+}
+
+/* Leaf Motif Watermark */
+.bowlora-leaf-watermark::after {
+  content: "🍃";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  font-size: 160px;
+  opacity: 0.04;
+  pointer-events: none;
+  transform: rotate(15deg);
+}
 
 /* Animations */
 @keyframes floatSlow {
@@ -118,8 +156,8 @@
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 ::-webkit-scrollbar        { width: 6px; }
-::-webkit-scrollbar-track  { background: #141810; }
-::-webkit-scrollbar-thumb  { background: #2E3324; border-radius: 9999px; }
+::-webkit-scrollbar-track  { background: #242A1C; }
+::-webkit-scrollbar-thumb  { background: #3D4530; border-radius: 9999px; }
 ::-webkit-scrollbar-thumb:hover { background: #4A5D2A; }
 
 .section-pad { padding-top: 6rem; padding-bottom: 6rem; }

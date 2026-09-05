@@ -73,12 +73,11 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] flex flex-col items-center justify-between p-6 sm:p-10 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`fixed inset-0 z-[9999] dark-section bowlora-leaf-watermark flex flex-col items-center justify-between p-6 sm:p-10 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
         phase === 5 ? 'opacity-0 pointer-events-none scale-105' : 'opacity-100 pointer-events-auto'
       }`}
       style={{
-        backgroundColor: '#141810',
-        backgroundImage: 'radial-gradient(circle at 50% 45%, rgba(58, 74, 34, 0.55) 0%, rgba(20, 24, 16, 1) 70%)',
+        background: 'linear-gradient(160deg, #242A1C 0%, #2A3020 70%, #1F241A 100%)',
       }}
     >
       {/* Top Accent Badge */}

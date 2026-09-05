@@ -7,14 +7,15 @@ Bowlora's visual identity balances **natural health** with **royal editorial lux
 
 ## 2. Color System & Design Tokens
 
-### Core Color Palette
+### Core Color Palette (Real Warm Olive System)
 
 | Token Name | HEX Code | CSS Variable | Purpose |
 | :--- | :--- | :--- | :--- |
-| **Dark Olive Base** | `#141810` | `--color-bg-dark` | Primary section background for high-contrast dark sections |
-| **Dark Olive Card** | `#1F2418` | `--color-bg-card-dark` | Card background inside dark sections |
-| **Olive Border** | `#2E3324` | `--color-border-dark` | Subtle dividers and card borders in dark sections |
-| **Olive Accent Fill** | `#4A5D2A` | `--color-olive-primary` | Primary button fill and active icon badges |
+| **Real Dark Olive Base** | `#242A1C` | `--color-bg-dark` | Base dark section background with visible yellow-green warmth |
+| **Dark Olive Alt** | `#2A3020` | `--color-bg-dark-alt` | Lifted dark surface for gradient depth & alternating dark sections |
+| **Dark Olive Card** | `#2D3423` | `--color-bg-card-dark` | Card background sitting on dark olive sections |
+| **Olive Border** | `#3D4530` | `--color-border-dark` | Card borders and section dividers in dark sections |
+| **Olive Primary Fill** | `#4A5D2A` | `--color-olive-primary` | Primary button fill and active icon badges |
 | **Olive Light Text** | `#7A9450` | `--color-green-light` | Highlighted text terms, price totals, and green pills |
 | **Warm Cream Base** | `#F5F1E8` | `--color-bg-cream` | Alternating section background for visual rhythm |
 | **Cream Card Fill** | `#EFEADD` | `--color-bg-cream-alt` | Card backgrounds inside cream sections |
@@ -22,6 +23,15 @@ Bowlora's visual identity balances **natural health** with **royal editorial lux
 | **Muted Gold Text** | `#C9A876` | `--color-gold-muted` | Taglines, quote marks, and gold text highlights |
 | **Dark Text** | `#1F2418` | `--color-text-dark` | Headings inside cream sections |
 | **Dark Muted Text** | `#4A4A3E` | `--color-text-dark-muted` | Body text inside cream sections |
+
+---
+
+## 3. Surface Texture & Anti-Template Enhancements
+
+To eliminate flat single-color "generic AI template" fills, the site applies:
+1. **Fractal Noise Grain Texture Overlay**: Applied via `.dark-section::before` at 3.5% opacity with `mix-blend-mode: overlay` to give dark surfaces an authentic tactile feel.
+2. **Organic Food Blob Mask**: Hero image uses asymmetric clip mask (`bowlora-organic-blob`) paired with an overlapping secondary photo (`-6deg` tilt) to break rigid template symmetry.
+3. **Bespoke Leaf Watermark**: Custom SVG leaf motif (`.bowlora-leaf-watermark`) woven into background of Hero, Splash Screen, and Footer.
 
 ---
 

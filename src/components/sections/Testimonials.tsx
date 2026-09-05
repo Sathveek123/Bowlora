@@ -36,8 +36,8 @@ const reviews = [
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="py-24 sm:py-32 bg-[#141810] text-[#F5F1E8] border-t border-[#2E3324] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center space-y-3">
+    <section className="py-24 sm:py-32 dark-section text-[#F5F1E8] border-t border-[#3D4530] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center space-y-3 relative z-10">
         <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#B08D57]">
           TESTIMONIALS
         </span>
@@ -47,12 +47,12 @@ export const Testimonials: React.FC = () => {
       </div>
 
       {/* Infinite Horizontal Marquee Carousel */}
-      <div className="w-full overflow-hidden relative">
+      <div className="w-full overflow-hidden relative z-10">
         <div className="animate-marquee-slow flex gap-6 py-4">
           {reviews.concat(reviews).map((r, idx) => (
             <div
               key={idx}
-              className="w-[320px] sm:w-[360px] bg-[#1F2418] border border-[#2E3324] rounded-[20px] p-7 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:border-[#B08D57]/40 transition-all duration-300 flex-shrink-0 flex flex-col justify-between"
+              className="w-[320px] sm:w-[360px] bg-[#2D3423] border border-[#3D4530] rounded-[20px] p-7 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:border-[#B08D57]/40 transition-all duration-300 flex-shrink-0 flex flex-col justify-between"
             >
               <div className="space-y-4">
                 {/* Header: 5 Stars + Quote Mark */}

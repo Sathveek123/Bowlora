@@ -43,8 +43,8 @@ export const NutritionPhilosophy: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#1B1F16] text-[#F5F1E8] border-t border-[#2E3324]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 dark-section text-[#F5F1E8] border-t border-[#3D4530]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Centered Heading Block */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -66,7 +66,7 @@ export const NutritionPhilosophy: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-[#1F2418] border border-[#2E3324] rounded-[20px] p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:border-[#B08D57]/50 hover:-translate-y-1.5 transition-all duration-300 group"
+                className="bg-[#2D3423] border border-[#3D4530] rounded-[20px] p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:border-[#B08D57]/50 hover:-translate-y-1.5 transition-all duration-300 group"
               >
                 <div className="w-14 h-14 rounded-2xl bg-[#4A5D2A]/20 border border-[#7A9450]/30 text-[#C9A876] flex items-center justify-center mb-6 group-hover:bg-[#4A5D2A] group-hover:text-[#F5F1E8] transition-colors duration-300">
                   <Icon className="w-7 h-7" />
@@ -85,7 +85,7 @@ export const NutritionPhilosophy: React.FC = () => {
       </div>
 
       {/* Full-width Ingredient Parade Band */}
-      <div className="w-full bg-[#1F2418] py-8 border-y border-[#2E3324] overflow-hidden">
+      <div className="w-full bg-[#2D3423] py-8 border-y border-[#3D4530] overflow-hidden relative z-10">
         <div className="max-w-7xl mx-auto px-4 mb-3 text-center">
           <span className="font-accent text-xs font-semibold uppercase tracking-widest text-[#B08D57]">
             🌱 100% Real Ingredients Sourced Daily
@@ -95,7 +95,7 @@ export const NutritionPhilosophy: React.FC = () => {
           {ingredients.concat(ingredients).map((ing, i) => (
             <span
               key={i}
-              className="inline-flex items-center px-4 py-2 bg-[#141810] rounded-full border border-[#2E3324] text-sm font-medium text-[#F5F1E8] whitespace-nowrap shadow-sm hover:border-[#B08D57]/50 hover:bg-[#1F2418] transition-all cursor-default"
+              className="inline-flex items-center px-4 py-2 bg-[#242A1C] rounded-full border border-[#3D4530] text-sm font-medium text-[#F5F1E8] whitespace-nowrap shadow-sm hover:border-[#B08D57]/50 hover:bg-[#2D3423] transition-all cursor-default"
             >
               {ing}
             </span>
