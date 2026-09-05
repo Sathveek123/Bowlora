@@ -29,7 +29,7 @@ export const BrandStory: React.FC<BrandStoryProps> = ({ onOpenAboutModal }) => {
           <div className="lg:col-span-7 flex flex-col items-start gap-6">
 
             {/* Eyebrow label */}
-            <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#4A5D2A]">
+            <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#B08D57]">
               OUR PHILOSOPHY
             </span>
 

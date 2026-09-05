@@ -36,7 +36,7 @@ export const FitnessGoals: React.FC<FitnessGoalsProps> = ({ onSelectGoalForPlans
 
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#4A5D2A]">
+          <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#B08D57]">
             CHOOSE YOUR GOAL
           </span>
           <h2 className="font-display font-semibold text-3xl sm:text-[44px] text-[#1F2418] leading-tight">
@@ -48,12 +48,12 @@ export const FitnessGoals: React.FC<FitnessGoalsProps> = ({ onSelectGoalForPlans
         </div>
 
         {/* Tier 1 — Featured Goal Banner (PCOS/PCOD Priority) */}
-        <div className="bg-[#4A5D2A]/10 border border-[#B08D57]/40 rounded-[24px] p-8 sm:p-12 mb-12 shadow-sm">
+        <div className="bg-[#EFEADD] border-2 border-[#B08D57] rounded-[24px] p-8 sm:p-12 mb-12 shadow-md">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Left Content */}
             <div className="lg:col-span-7 flex flex-col items-start gap-4">
-              <span className="bg-[#B08D57]/20 border border-[#B08D57]/40 text-[#8A6F44] px-3.5 py-1 rounded-full font-accent text-xs uppercase tracking-wider font-bold flex items-center gap-1.5">
+              <span className="bg-[#B08D57]/20 border border-[#B08D57]/50 text-[#B08D57] px-3.5 py-1 rounded-full font-accent text-xs uppercase tracking-wider font-bold flex items-center gap-1.5 shadow-sm">
                 <HeartPulse className="w-3.5 h-3.5" />
                 🌸 {priorityGoal.priorityLabel}
               </span>

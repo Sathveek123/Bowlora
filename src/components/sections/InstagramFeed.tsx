@@ -17,14 +17,14 @@ export const InstagramFeed: React.FC = () => {
 
         {/* Header Block */}
         <div className="text-center max-w-xl mx-auto mb-12 space-y-2">
-          <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#4A5D2A]">
+          <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#B08D57]">
             FOLLOW ALONG
           </span>
           <h2 className="font-display font-semibold text-2xl sm:text-4xl text-[#1F2418]">
             Follow us on Instagram
           </h2>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/bowlora"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block font-body text-base font-semibold text-[#4A5D2A] hover:underline"

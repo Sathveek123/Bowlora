@@ -34,7 +34,7 @@ export const FitnessPartnerships: React.FC<FitnessPartnershipsProps> = ({ onOpen
           <div className="lg:col-span-6 flex flex-col items-start gap-6">
 
             {/* Eyebrow label */}
-            <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#4A5D2A]">
+            <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#B08D57]">
               BOWLORA X FITNESS
             </span>
 

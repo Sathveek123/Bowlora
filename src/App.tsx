@@ -6,9 +6,7 @@ import { WhyBowlora } from './components/sections/WhyBowlora';
 import { NutritionPhilosophy } from './components/sections/NutritionPhilosophy';
 import { BrandStory } from './components/sections/BrandStory';
 import { MealsShowcase } from './components/sections/MealsShowcase';
-import { ChefProfiles } from './components/sections/ChefProfiles';
 import { FitnessGoals } from './components/sections/FitnessGoals';
-import { Transformation } from './components/sections/Transformation';
 import { HowItWorks } from './components/sections/HowItWorks';
 import { FitnessPartnerships } from './components/sections/FitnessPartnerships';
 import { PromoHub } from './components/sections/PromoHub';
@@ -48,9 +46,7 @@ export const App: React.FC = () => {
         <NutritionPhilosophy />
         <BrandStory onOpenAboutModal={() => setIsAboutOpen(true)} />
         <MealsShowcase />
-        <ChefProfiles />
         <FitnessGoals onSelectGoalForPlans={(slug) => setSelectedGoalSlug(slug)} />
-        <Transformation />
         <HowItWorks />
         <FitnessPartnerships onOpenPartnerModal={() => setIsPartnerOpen(true)} />
         <PromoHub />
