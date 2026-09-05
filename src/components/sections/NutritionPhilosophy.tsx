@@ -43,18 +43,18 @@ export const NutritionPhilosophy: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#1B1F16] text-[#F5F1E8] border-t border-[#2E3324]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Centered Heading Block */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span className="font-body text-[11px] font-bold uppercase tracking-[4px] text-[#2E7D32]">
+          <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#B08D57]">
             OUR FOOD PHILOSOPHY
           </span>
-          <h2 className="font-display font-bold text-4xl sm:text-5xl text-[#1A1A1A] leading-tight">
+          <h2 className="font-display font-semibold text-3xl sm:text-5xl text-[#F5F1E8] leading-tight">
             "Food should heal, fuel, and delight — in that order."
           </h2>
-          <p className="font-body text-base sm:text-lg text-[#666666] leading-relaxed">
+          <p className="font-body text-base sm:text-lg text-[#D8D2C0] leading-relaxed">
             We believe nutrition isn't about restriction — it's about addition. Adding more fiber, more color, more real protein, and more joy into your daily life.
           </p>
         </div>
@@ -66,15 +66,15 @@ export const NutritionPhilosophy: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-white border border-[#E8E8E8] rounded-[20px] p-8 shadow-[0_4px_24px_rgba(0,0,0,0.05)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300 group"
+                className="bg-[#1F2418] border border-[#2E3324] rounded-[20px] p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)] hover:border-[#B08D57]/50 hover:-translate-y-1.5 transition-all duration-300 group"
               >
-                <div className="w-14 h-14 rounded-2xl bg-[#F0F7EE] text-[#2E7D32] flex items-center justify-center mb-6 group-hover:bg-[#2E7D32] group-hover:text-white transition-colors duration-300">
+                <div className="w-14 h-14 rounded-2xl bg-[#4A5D2A]/20 border border-[#7A9450]/30 text-[#C9A876] flex items-center justify-center mb-6 group-hover:bg-[#4A5D2A] group-hover:text-[#F5F1E8] transition-colors duration-300">
                   <Icon className="w-7 h-7" />
                 </div>
-                <h3 className="font-body font-bold text-xl text-[#1A1A1A] mb-3">
+                <h3 className="font-body font-bold text-xl text-[#F5F1E8] mb-3">
                   {card.title}
                 </h3>
-                <p className="font-body text-sm sm:text-base text-[#666666] leading-relaxed">
+                <p className="font-body text-sm sm:text-base text-[#D8D2C0] leading-relaxed">
                   {card.desc}
                 </p>
               </div>
@@ -85,9 +85,9 @@ export const NutritionPhilosophy: React.FC = () => {
       </div>
 
       {/* Full-width Ingredient Parade Band */}
-      <div className="w-full bg-[#F0F7EE] py-8 border-y border-[#C8D8C0]/50 overflow-hidden">
+      <div className="w-full bg-[#1F2418] py-8 border-y border-[#2E3324] overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 mb-3 text-center">
-          <span className="font-accent text-xs font-semibold uppercase tracking-widest text-[#2E7D32]">
+          <span className="font-accent text-xs font-semibold uppercase tracking-widest text-[#B08D57]">
             🌱 100% Real Ingredients Sourced Daily
           </span>
         </div>
@@ -95,7 +95,7 @@ export const NutritionPhilosophy: React.FC = () => {
           {ingredients.concat(ingredients).map((ing, i) => (
             <span
               key={i}
-              className="inline-flex items-center px-4 py-2 bg-white rounded-full border border-[#C8D8C0] text-sm font-medium text-[#1A1A1A] whitespace-nowrap shadow-sm hover:border-[#2E7D32] hover:bg-[#F0F7EE] transition-all cursor-default"
+              className="inline-flex items-center px-4 py-2 bg-[#141810] rounded-full border border-[#2E3324] text-sm font-medium text-[#F5F1E8] whitespace-nowrap shadow-sm hover:border-[#B08D57]/50 hover:bg-[#1F2418] transition-all cursor-default"
             >
               {ing}
             </span>
