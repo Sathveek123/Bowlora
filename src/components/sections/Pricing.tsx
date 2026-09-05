@@ -15,7 +15,7 @@ export const Pricing: React.FC<PricingProps> = ({
   const activeGoal = GOALS_DATA.find((g) => g.slug === selectedGoalSlug);
 
   return (
-    <section id="plans" className="py-24 sm:py-32 dark-section text-[#F5F1E8] border-t border-[#3D4530]">
+    <section id="plans" className="py-24 sm:py-32 dark-section grain-overlay text-[#F5F1E8] border-t border-[#3D4530]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Contextual Goal Banner (if arrived from Goal selection) */}

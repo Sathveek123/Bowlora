@@ -43,7 +43,7 @@ export const NutritionPhilosophy: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 dark-section text-[#F5F1E8] border-t border-[#3D4530]">
+    <section className="py-24 dark-section grain-overlay text-[#F5F1E8] border-t border-[#3D4530]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Centered Heading Block */}

@@ -4,7 +4,7 @@ import { Flame, ChevronDown, HeartPulse, Sparkles, ChefHat } from 'lucide-react'
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen dark-section bowlora-leaf-watermark text-[#F5F1E8] pt-32 sm:pt-36 pb-16 flex flex-col justify-between overflow-hidden">
+    <section className="relative min-h-screen dark-section grain-overlay hero-leaf-watermark text-[#F5F1E8] pt-32 sm:pt-36 pb-16 flex flex-col justify-between overflow-hidden">
       {/* Background Radial Gold & Olive Ambient Lighting */}
       <div className="absolute top-1/3 right-5 lg:right-20 w-[600px] h-[600px] bg-[#B08D57]/20 rounded-full blur-[140px] pointer-events-none -z-0 animate-pulse-slow" />
       <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-[#4A5D2A]/25 rounded-full blur-[120px] pointer-events-none -z-0" />

@@ -12,7 +12,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAbout, onOpenPartner }) =>
   const [activeLegalSlug, setActiveLegalSlug] = useState<'privacy' | 'terms' | 'refund' | null>(null);
 
   return (
-    <footer className="dark-section bowlora-leaf-watermark text-[#F5F1E8] border-t border-[#3D4530] pt-20 pb-8 relative overflow-hidden">
+    <footer className="dark-section grain-overlay footer-leaf-watermark text-[#F5F1E8] border-t border-[#3D4530] pt-20 pb-8 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* Modular Promotional Slot (Standalone Reusable Component with Scheduling Support) */}

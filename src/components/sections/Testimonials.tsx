@@ -36,7 +36,7 @@ const reviews = [
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="py-24 sm:py-32 dark-section text-[#F5F1E8] border-t border-[#3D4530] overflow-hidden">
+    <section className="py-24 sm:py-32 dark-section grain-overlay text-[#F5F1E8] border-t border-[#3D4530] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center space-y-3 relative z-10">
         <span className="font-accent text-xs font-bold uppercase tracking-[3px] text-[#B08D57]">
           TESTIMONIALS

@@ -25,17 +25,17 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
 
     const t2 = setTimeout(() => {
       setPhase(2);
-      setStatusText('👨‍🍳 Chef-Crafting Macro-Balanced Meals...');
+      setStatusText('Chef-crafted, macro-balanced meals prepped daily');
     }, 1500);
 
     const t3 = setTimeout(() => {
       setPhase(3);
-      setStatusText('🌸 PCOS/PCOD & Fitness Nutrition Prepped...');
+      setStatusText('PCOS/PCOD & fitness nutrition prepped');
     }, 3200);
 
     const t4 = setTimeout(() => {
       setPhase(4);
-      setStatusText('🥗 Welcome to Bowlora Jaipur!');
+      setStatusText('Welcome to Bowlora Jaipur');
     }, 4800);
 
     const t5 = setTimeout(() => {
@@ -73,7 +73,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] dark-section bowlora-leaf-watermark flex flex-col items-center justify-between p-6 sm:p-10 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`fixed inset-0 z-[9999] grain-overlay splash-screen-watermark flex flex-col items-center justify-between p-6 sm:py-8 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
         phase === 5 ? 'opacity-0 pointer-events-none scale-105' : 'opacity-100 pointer-events-auto'
       }`}
       style={{
@@ -82,18 +82,18 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
     >
       {/* Top Accent Badge */}
       <div
-        className={`pt-4 transition-all duration-700 ${
+        className={`pt-2 transition-all duration-700 ${
           phase >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
         }`}
       >
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1F2418] border border-[#C9A876]/30 font-accent text-xs uppercase tracking-[3px] text-[#C9A876] shadow-md">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2D3423] border border-[#B08D57]/40 font-accent text-xs uppercase tracking-[3px] text-[#C9A876] shadow-md">
           <Sparkles className="w-3.5 h-3.5 text-[#C9A876]" />
           <span>Freshness Delivered Daily · Jaipur</span>
         </div>
       </div>
 
       {/* Centered Vertical Lockup Container */}
-      <div className="relative flex flex-col items-center justify-center px-6 w-full max-w-xl text-center my-auto">
+      <div className="relative flex flex-col items-center justify-center px-6 w-full max-w-xl text-center my-auto py-2">
 
         {/* Prominent Large Logo Badge */}
         <div
@@ -102,14 +102,14 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
           }`}
         >
           {/* Circular Logo Emblem + Olive Glow Halo */}
-          <div className="relative mb-6">
+          <div className="relative mb-5">
             <div
               className={`absolute inset-0 rounded-full bg-[#3A4A22] blur-3xl transition-opacity duration-1000 ${
                 phase >= 1 ? 'opacity-80 scale-150' : 'opacity-0 scale-75'
               }`}
             />
 
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 max-w-[300px] max-h-[300px] rounded-full p-2.5 border-2 border-[#C9A876] bg-[#141810] shadow-[0_0_60px_rgba(58,74,34,0.6)] flex items-center justify-center overflow-hidden">
+            <div className="relative w-44 h-44 sm:w-60 sm:h-60 md:w-64 md:h-64 max-w-[280px] max-h-[280px] rounded-full p-2.5 border-2 border-[#C9A876] bg-[#242A1C] shadow-[0_0_60px_rgba(58,74,34,0.6)] flex items-center justify-center overflow-hidden">
               <img
                 src="/logo/WhatsApp Image 2026-09-04 at 7.59.18 PM.jpeg"
                 alt="Bowlora Round Logo"
@@ -121,8 +121,8 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
 
           {/* Wordmark & Location Subtitle */}
           <div className="flex flex-col items-center gap-1.5 mb-2">
-            <div className="flex items-center gap-2.5 font-display font-bold text-3xl sm:text-5xl text-[#F5F1E8] tracking-tight">
-              <Leaf className="w-7 h-7 sm:w-9 sm:h-9 text-[#7A9450] fill-[#7A9450]/20" />
+            <div className="flex items-center gap-2.5 font-display font-bold text-3xl sm:text-4xl text-[#F5F1E8] tracking-tight">
+              <Leaf className="w-6 h-6 sm:w-8 sm:h-8 text-[#7A9450] fill-[#7A9450]/20" />
               <span>Bowlora</span>
             </div>
             <span className="font-accent text-[11px] sm:text-[12px] uppercase tracking-[4px] text-[#C9A876] font-semibold">
@@ -132,7 +132,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
         </div>
 
         {/* Thin Gold Divider Line */}
-        <div className="w-56 sm:w-72 h-[1px] my-5 relative overflow-hidden flex items-center justify-center">
+        <div className="w-56 sm:w-72 h-[1px] my-4 relative overflow-hidden flex items-center justify-center">
           <div
             className={`h-full bg-gradient-to-r from-transparent via-[#C9A876] to-transparent transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               phase >= 1 ? 'w-full opacity-100' : 'w-0 opacity-0'
@@ -154,15 +154,14 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
 
       </div>
 
-      {/* Bottom Progress Bar & Live Status Indicator */}
-      <div className="w-full max-w-sm space-y-3 pb-4 flex flex-col items-center">
-        <div className="font-accent text-xs text-[#D8D2C0] tracking-wider transition-all duration-300 min-h-[20px] flex items-center gap-1.5">
-          <Heart className="w-3.5 h-3.5 text-[#7A9450] animate-pulse" />
+      {/* Bottom Progress Bar & Live Status Indicator (Tightened Vertical Gap) */}
+      <div className="w-full max-w-sm space-y-2.5 pb-2 flex flex-col items-center">
+        <div className="font-body text-xs text-[#D8D2C0]/90 tracking-wide transition-all duration-300 min-h-[18px] flex items-center gap-1.5">
           <span>{statusText}</span>
         </div>
 
         {/* 6-Second Progress Track */}
-        <div className="w-full h-1.5 bg-[#1F2418] border border-[#2E3324] rounded-full overflow-hidden p-0.5">
+        <div className="w-full h-1.5 bg-[#2D3423] border border-[#3D4530] rounded-full overflow-hidden p-0.5">
           <div
             className="h-full bg-gradient-to-r from-[#4A5D2A] via-[#7A9450] to-[#C9A876] rounded-full transition-all duration-100 ease-linear"
             style={{ width: `${Math.min(progress, 100)}%` }}
@@ -174,7 +173,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
             setIsVisible(false);
             onComplete?.();
           }}
-          className="font-accent text-[10px] text-[#C9A876]/70 hover:text-[#F5F1E8] tracking-widest uppercase transition-colors pt-1"
+          className="font-accent text-[10px] text-[#C9A876]/80 hover:text-[#F5F1E8] tracking-[2px] uppercase transition-colors pt-0.5 cursor-pointer"
         >
           Skip Intro →
         </button>

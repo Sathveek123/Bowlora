@@ -137,10 +137,10 @@ export const CategoryMenuModal: React.FC<CategoryMenuModalProps> = ({
                     {/* Meal Content */}
                     <div className="p-5 space-y-3">
                       <div className="flex items-start justify-between gap-2">
-                        <h3 className="font-display font-semibold text-lg text-[#F5F1E8] leading-tight">
+                        <h3 className="font-display font-semibold text-base sm:text-lg text-[#F5F1E8] leading-tight truncate" title={meal.name}>
                           {meal.name}
                         </h3>
-                        <span className="font-display font-bold text-lg text-[#7A9450] shrink-0">
+                        <span className="font-display font-bold text-base sm:text-lg text-[#7A9450] shrink-0">
                           ₹{meal.price}
                         </span>
                       </div>
