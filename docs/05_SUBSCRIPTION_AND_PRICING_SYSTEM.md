@@ -11,12 +11,18 @@ The Subscription & Pricing architecture (`src/components/sections/Pricing.tsx` &
 | :--- | :---: | :---: | :---: | :--- |
 | **3 - Day Trial Box** | 3 Days | ₹1,699 | ₹283 | Low-commitment taste test |
 | **7 - Day Routine Plan** | 7 Days | ₹3,999 | ₹285 | Weekly routine starter |
-| **15 - Day Copper Plan** ⭐ | 15 Days | **₹7,777** | **₹259** | **Most Popular Transformation** |
+| **15 - Day Copper Plan** ⭐ | 15 Days | **₹7,777** | **₹259** | **Recommended Transformation** |
 | **28 - Days Lifestyle Plan** | 28 Days | ₹12,999 | ₹232 | Full wellness lifestyle partner |
 
 ---
 
-## 3. Simplified 6-Item Card Architecture
+## 3. Indicative Pricing & Business Sign-off Note
+> [!IMPORTANT]
+> **Pricing Disclaimer**: Listed package prices (₹1,699, ₹3,999, ₹7,777, ₹12,999) are indicative starting estimates. Final customized subscription pricing is confirmed directly during WhatsApp consultation based on specific caloric targets and dietary preferences.
+
+---
+
+## 4. Simplified 6-Item Card Architecture
 
 Every pricing card displays ONLY these 6 elements in exact top-to-bottom order:
 
@@ -31,11 +37,11 @@ Every pricing card displays ONLY these 6 elements in exact top-to-bottom order:
 
 ---
 
-## 4. Featured Gold Card Highlight
+## 5. Recommended Gold Card Highlight
 The **15-Day Copper Plan** carries:
 - `border-2 border-[#B08D57]` (gold border)
 - `shadow-[0_16px_50px_rgba(176,141,87,0.2)]`
-- Gold pill badge: `✨ MOST POPULAR`
+- Honest, verifiable Gold pill badge: `✨ RECOMMENDED PLAN` (avoiding artificial superlative claims prior to verified usage data).
 
 ---
 

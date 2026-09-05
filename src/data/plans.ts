@@ -68,8 +68,8 @@ export const SUBSCRIPTION_PLANS: SubscriptionPlan[] = [
     id: 'copper-plan',
     name: '15 - Day Copper Plan',
     durationDays: 15,
-    tagline: 'Transformation-focused mid-term option. Most popular consistency plan.',
-    badge: '🌿 Most Popular Transformation Plan',
+    tagline: 'Transformation-focused mid-term option. Most balanced consistency plan.',
+    badge: '🌿 Recommended Transformation Plan',
     accentColor: '#2E7D32',
     tiers: [
       { mealsPerDay: 1, price: 4444, pricePerMeal: 296 },

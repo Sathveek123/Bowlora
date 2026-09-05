@@ -13,7 +13,8 @@ export const Newsletter: React.FC = () => {
       confetti({
         particleCount: 70,
         spread: 80,
-        origin: { y: 0.7 }
+        origin: { y: 0.7 },
+        colors: ['#B08D57', '#C9A876', '#4A5D2A', '#F5F1E8', '#7A9450']
       });
     }
   };

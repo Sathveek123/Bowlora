@@ -91,7 +91,7 @@ export const Pricing: React.FC<PricingProps> = ({
                 {isFeatured && (
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#B08D57] text-[#141810] font-accent text-[11px] font-bold px-4 py-1 rounded-full shadow-sm whitespace-nowrap flex items-center gap-1.5 uppercase tracking-wider">
                     <Sparkles className="w-3 h-3 fill-[#141810]" />
-                    <span>{activeGoal && activeGoal.recommendedPlanIds.includes(plan.id) ? `Recommended Plan` : `Most Popular`}</span>
+                    <span>{activeGoal && activeGoal.recommendedPlanIds.includes(plan.id) ? `Recommended Plan` : `Recommended Plan`}</span>
                   </div>
                 )}
 
@@ -145,16 +145,21 @@ export const Pricing: React.FC<PricingProps> = ({
           })}
         </div>
 
-        {/* Fine Print Note */}
-        <div className="text-center font-body text-xs text-[#A8A292] flex flex-wrap items-center justify-center gap-4 pt-6 border-t border-[#2E3324]">
-          <span className="flex items-center gap-1">
-            <ShieldCheck className="w-4 h-4 text-[#7A9450]" />
-            All plans include GST
-          </span>
-          <span>•</span>
-          <span>Delivery available across Jaipur</span>
-          <span>•</span>
-          <span>Pause or resume subscription anytime via WhatsApp</span>
+        {/* Fine Print Note & Indicative Pricing Disclaimer */}
+        <div className="text-center font-body text-xs text-[#A8A292] flex flex-col items-center justify-center gap-2 pt-6 border-t border-[#2E3324]">
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <span className="flex items-center gap-1">
+              <ShieldCheck className="w-4 h-4 text-[#7A9450]" />
+              All plans include GST
+            </span>
+            <span>•</span>
+            <span>Free Doorstep Delivery in Jaipur</span>
+            <span>•</span>
+            <span>Pause or resume subscription anytime via WhatsApp</span>
+          </div>
+          <p className="text-[11px] text-[#A8A292]/70 italic pt-1 max-w-xl">
+            * Note: Package prices shown are indicative starting tiers. Final customized subscription pricing is confirmed directly with Bowlora's nutrition team based on individual calorie targets and dietary preferences.
+          </p>
         </div>
 
       </div>

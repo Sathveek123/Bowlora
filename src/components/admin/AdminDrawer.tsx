@@ -4,17 +4,29 @@ import { Settings, X, Edit3, Save, Check, Layers, Tag, DollarSign } from 'lucide
 export const AdminDrawer: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [savedMessage, setSavedMessage] = useState(false);
-  const [cmsState, setCmsState] = useState({
-    heroTagline: 'Junk is everywhere. Health is rare. That\'s why Bowlora.',
-    location: 'Jagatpura, Jaipur',
-    phone: '9119222601',
-    pcosBannerActive: true,
-    trialPrice: '1,199',
-    copperPrice: '4,444',
+  
+  const [cmsState, setCmsState] = useState(() => {
+    const saved = localStorage.getItem('bowlora_cms_settings');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        // Fallback
+      }
+    }
+    return {
+      heroTagline: 'Junk is everywhere. Health is rare. That\'s why Bowlora.',
+      location: 'Jagatpura, Jaipur',
+      phone: '9119222601',
+      pcosBannerActive: true,
+      trialPrice: '1,199',
+      copperPrice: '4,444',
+    };
   });
 
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
+    localStorage.setItem('bowlora_cms_settings', JSON.stringify(cmsState));
     setSavedMessage(true);
     setTimeout(() => setSavedMessage(false), 3000);
   };

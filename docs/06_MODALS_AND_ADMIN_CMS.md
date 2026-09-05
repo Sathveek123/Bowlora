@@ -14,7 +14,20 @@ To ensure seamless user navigation without page reloads, Bowlora incorporates a 
 | `AboutModal.tsx` | "About Us" navbar link / Brand Story button | Comprehensive brand story, Jaipur culinary team background, and quality promise |
 | `PartnerModal.tsx` | "Gym Partner" navbar link / Partnerships CTA | B2B Gym & Fitness Studio partnership application form with custom commission calculator |
 | `LegalModal.tsx` | Footer links (Privacy, Terms, Refund) | Complete legal policies rendering privacy, terms of service, and cancellation terms |
-| `AdminDrawer.tsx` | Bottom-right fixed floating trigger | Live CMS preview panel allowing client editors to update prices, toggle promo banners, and preview text changes live |
+| `AdminDrawer.tsx` | Bottom-right fixed floating trigger | Live CMS preview panel allowing client editors to update prices, toggle promo banners, and preview text changes live. Persists settings across browser sessions via `localStorage`. |
+
+---
+
+## 3. CMS Persistence Architecture & Long-Term Backend Integration
+
+### Current Persistence Model
+- Uses `localStorage` key `'bowlora_cms_settings'` to store edits to taglines, contact numbers, promo flags, and pricing overrides.
+- Changes made in the `AdminDrawer` survive browser reloads on the client device.
+
+### Long-Term Headless CMS Integration Path
+For full multi-device synchronization and team-wide CMS editing (per brief Section 09):
+1. **Supabase / Firebase Integration**: Connect `AdminDrawer.tsx` save handler to update a `cms_settings` table in Supabase.
+2. **Sanity.io / Strapi Option**: Swap `src/data/meals.ts` and `src/data/plans.ts` with API fetches from Sanity/Strapi.
 
 ---
 
