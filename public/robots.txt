@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bowlora.com/sitemap.xml

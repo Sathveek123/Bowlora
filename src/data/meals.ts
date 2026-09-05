@@ -1,0 +1,180 @@
+export interface Meal {
+  id: string;
+  name: string;
+  category: 'Bowls' | 'High-Protein Meals' | 'Salads & Fresh Plates' | 'Wraps & Sandwiches' | 'Breakfast & Brunch' | 'Smart Snacks' | 'Smoothies & Healthy Treats';
+  description: string;
+  calories: number;
+  protein: string;
+  carbs: string;
+  fats: string;
+  price: number;
+  image: string;
+  alt_text?: string;
+  badge?: string;
+  isPCOS?: boolean;
+  isHighProtein?: boolean;
+  allergens?: string[];
+  isPopular?: boolean;
+}
+
+export const MEAL_CATEGORIES = [
+  'All',
+  'PCOS/PCOD Friendly 🌸',
+  'Bowls',
+  'High-Protein Meals',
+  'Salads & Fresh Plates',
+  'Wraps & Sandwiches',
+  'Breakfast & Brunch',
+  'Smart Snacks',
+  'Smoothies & Healthy Treats'
+] as const;
+
+export const MEALS_DATA: Meal[] = [
+  {
+    id: 'green-goddess-bowl',
+    name: 'Green Goddess Quinoa Bowl',
+    category: 'Bowls',
+    description: 'Crisp organic kale, tri-color quinoa, roasted chickpeas, pumpkin seeds, and avocado-tahini drizzle. Hormone-balancing & anti-inflammatory.',
+    calories: 420,
+    protein: '18g',
+    carbs: '48g',
+    fats: '16g',
+    price: 189,
+    image: '/images/1.jpeg',
+    alt_text: 'Green Goddess Quinoa Bowl with organic kale, chickpeas and avocado-tahini dressing',
+    badge: '🌸 PCOS Friendly',
+    isPCOS: true,
+    isHighProtein: true,
+    allergens: ['Sesame (Tahini)', 'Seeds'],
+    isPopular: true,
+  },
+  {
+    id: 'tandoori-paneer-protein',
+    name: 'High-Protein Tandoori Paneer Box',
+    category: 'High-Protein Meals',
+    description: 'Herb-grilled cottage cheese, spiced edamame, charred broccoli florets, and brown rice with mint Greek yogurt sauce.',
+    calories: 480,
+    protein: '28g',
+    carbs: '42g',
+    fats: '18g',
+    price: 219,
+    image: '/images/4.jpeg',
+    alt_text: 'High-Protein Tandoori Paneer Box with grilled cottage cheese, edamame and brown rice',
+    badge: '💪 28g Protein',
+    isHighProtein: true,
+    isPCOS: true,
+    allergens: ['Dairy (Paneer & Yogurt)'],
+    isPopular: true,
+  },
+  {
+    id: 'mediterranean-chana-salad',
+    name: 'Mediterranean Sprouted Chana Salad',
+    category: 'Salads & Fresh Plates',
+    description: 'Sprouted Bengal gram, cherry tomatoes, cucumber cubes, kalamata olives, crumbled feta, and cold-pressed lemon-olive oil dressing.',
+    calories: 340,
+    protein: '20g',
+    carbs: '38g',
+    fats: '12g',
+    price: 179,
+    image: '/images/8.jpeg',
+    alt_text: 'Mediterranean Sprouted Chana Salad with cherry tomatoes, kalamata olives and feta',
+    badge: '🌿 Low GI & Fiber Rich',
+    isPCOS: true,
+    allergens: ['Dairy (Feta - optional)'],
+  },
+  {
+    id: 'paneer-tikka-wrap',
+    name: 'Whole-Wheat Grilled Paneer Wrap',
+    category: 'Wraps & Sandwiches',
+    description: 'Slow-grilled spiced cottage cheese, crunchy lettuce, bell peppers, and homemade green chutney wrapped in artisanal whole-wheat roti.',
+    calories: 440,
+    protein: '24g',
+    carbs: '46g',
+    fats: '16g',
+    price: 199,
+    image: '/images/4.jpeg',
+    alt_text: 'Whole-Wheat Grilled Paneer Wrap with bell peppers and green chutney',
+    badge: '🌯 Whole Grain',
+    allergens: ['Gluten', 'Dairy'],
+    isPopular: true,
+  },
+  {
+    id: 'berry-chia-smoothie-bowl',
+    name: 'Acai Berry & Chia Breakfast Bowl',
+    category: 'Breakfast & Brunch',
+    description: 'Antioxidant-rich berry puree, soaked chia seeds, coconut yogurt, hand-baked flaxseed granola, and fresh strawberry slices.',
+    calories: 320,
+    protein: '12g',
+    carbs: '52g',
+    fats: '8g',
+    price: 169,
+    image: '/images/3.jpeg',
+    alt_text: 'Acai Berry & Chia Breakfast Bowl with coconut yogurt and flaxseed granola',
+    badge: '🌸 Hormone Support',
+    isPCOS: true,
+    allergens: ['Nuts (Granola)'],
+  },
+  {
+    id: 'hummus-seed-crackers',
+    name: 'Garlic Hummus & Seeded Crispbread',
+    category: 'Smart Snacks',
+    description: 'House-made garlic chickpea dip drizzled with extra virgin olive oil, served with flax-chia crispbreads and cucumber spears.',
+    calories: 280,
+    protein: '11g',
+    carbs: '32g',
+    fats: '12g',
+    price: 139,
+    image: '/images/10.jpeg',
+    alt_text: 'Garlic Hummus & Seeded Crispbread with olive oil drizzle and cucumber spears',
+    badge: '🫘 Zero Refined Sugar',
+    isPCOS: true,
+    allergens: ['Sesame'],
+  },
+  {
+    id: 'mango-chia-pudding',
+    name: 'Alphonso Mango Chia Parfait',
+    category: 'Smoothies & Healthy Treats',
+    description: 'Layered coconut milk chia pudding, natural Alphonso mango pulp, toasted almond slivers, and raw Jaipur honey.',
+    calories: 260,
+    protein: '9g',
+    carbs: '36g',
+    fats: '9g',
+    price: 149,
+    image: '/images/9.jpeg',
+    alt_text: 'Alphonso Mango Chia Parfait layered with coconut milk chia pudding and almond slivers',
+    badge: '🥭 Guilt-Free Dessert',
+    allergens: ['Tree Nuts (Almonds)'],
+  },
+  {
+    id: 'detox-green-smoothie',
+    name: 'Jaipur Green Gut Detox Smoothie',
+    category: 'Smoothies & Healthy Treats',
+    description: 'Cold-pressed spinach, green apple, cucumber, ginger root, hydration coconut water, and lemon juice. Gut health booster.',
+    calories: 160,
+    protein: '5g',
+    carbs: '32g',
+    fats: '1g',
+    price: 139,
+    image: '/images/6.jpeg',
+    alt_text: 'Jaipur Green Gut Detox Smoothie with spinach, green apple, cucumber and ginger',
+    badge: '🧘 Gut Health',
+    isPCOS: true,
+  },
+  {
+    id: 'wild-mushroom-brown-rice',
+    name: 'Wild Mushroom & Edamame Brown Rice',
+    category: 'Bowls',
+    description: 'Herb-roasted mushrooms, steamed brown rice, shelled edamame, sesame seeds, and tamari reduction.',
+    calories: 410,
+    protein: '22g',
+    carbs: '56g',
+    fats: '11g',
+    price: 199,
+    image: '/images/7.jpeg',
+    alt_text: 'Wild Mushroom & Edamame Brown Rice bowl with roasted mushrooms and sesame seeds',
+    badge: '🍄 Umami & Fiber',
+    isPCOS: true,
+    allergens: ['Soy', 'Sesame'],
+    isPopular: true,
+  }
+];

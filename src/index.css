@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* === CORE BACKGROUND TONES === */
+    --color-bg-deep: #141810;        /* Primary dark background - blackened olive */
+    --color-bg-deep-alt: #1B1F16;    /* Slightly lifted dark surface, for alternating sections */
+    --color-bg-card-dark: #1F2418;   /* Card backgrounds sitting on deep bg */
+    --color-bg-cream: #F5F1E8;       /* Light section background - warm off-white */
+    --color-bg-cream-alt: #EFEADD;   /* Slightly deeper cream for alternating light sections */
+
+    /* === GREEN SYSTEM === */
+    --color-olive-primary: #4A5D2A;   /* Deep olive green - primary brand green */
+    --color-olive-dark: #2E3A1A;      /* Darker olive for depth/shadows */
+    --color-green-light: #7A9450;     /* Light green accent - freshness, CTAs on dark bg */
+    --color-green-glow: #3A4A22;      /* Used ONLY for radial glows behind logo/hero elements */
+
+    /* === GOLD / BRASS ACCENT === */
+    --color-gold: #B08D57;            /* Primary brass/gold accent */
+    --color-gold-light: #C9A876;      /* Lighter gold for hover states */
+    --color-gold-muted: #8A6F44;      /* Deeper gold for pressed/active states */
+
+    /* === CREAM / TEXT ON DARK === */
+    --color-cream-text: #F5F1E8;      /* Primary text on dark backgrounds */
+    --color-cream-muted: #D8D2C0;     /* Secondary text on dark backgrounds */
+    --color-cream-ghost: #A8A292;     /* Tertiary/caption text on dark backgrounds */
+
+    /* === TEXT ON LIGHT BACKGROUNDS === */
+    --color-text-dark: #1F2418;       /* Primary text on cream backgrounds */
+    --color-text-dark-muted: #4A4A3E; /* Secondary text on cream backgrounds */
+    --color-text-dark-ghost: #7A7868; /* Tertiary text on cream backgrounds */
+
+    /* === BROWN === */
+    --color-brown: #6B4A32;
+    --color-brown-light: #8A6248;
+
+    /* === FUNCTIONAL === */
+    --color-border-dark: #2E3324;
+    --color-border-light: #DDD6C4;
+    --color-success: #7A9450;
+    --color-error: #B0563E;
+
+    /* === SHADOWS & GLOWS === */
+    --shadow-card-dark: 0 8px 32px rgba(0,0,0,0.4);
+    --shadow-card-light: 0 6px 24px rgba(74,93,42,0.12);
+    --glow-gold: 0 0 60px rgba(176,141,87,0.25);
+    --glow-green: 0 0 80px rgba(58,74,34,0.35);
+
+    /* Typography */
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'DM Sans', 'Inter', sans-serif;
+    --font-accent: 'Space Grotesk', monospace;
+  }
+
+  html {
+    scroll-padding-top: 96px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg-deep) !important;
+    font-family: var(--font-body);
+    color: var(--color-cream-text);
+    overflow-x: hidden;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+}
+
+/* Utility Font classes */
+.font-display { font-family: var(--font-display); }
+.font-body    { font-family: var(--font-body); }
+.font-accent  { font-family: var(--font-accent); }
+
+/* Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(-2deg); }
+  50%       { transform: translateY(-10px) rotate(-2deg); }
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-float-slow  { animation: floatSlow 6s ease-in-out infinite; }
+.animate-bounce-slow { animation: bounceSlow 2s ease-in-out infinite; }
+.animate-fade-in     { animation: fadeIn 0.25s ease forwards; }
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+.animate-marquee:hover { animation-play-state: paused; }
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+.animate-marquee-slow:hover { animation-play-state: paused; }
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: #141810; }
+::-webkit-scrollbar-thumb  { background: #2E3324; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #4A5D2A; }
+
+.section-pad { padding-top: 6rem; padding-bottom: 6rem; }
+@media (min-width: 1024px) {
+  .section-pad { padding-top: 8rem; padding-bottom: 8rem; }
+}
+
+.section-border { border-top: 1px solid var(--color-border-dark); }
